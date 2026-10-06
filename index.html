@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>命題中心影印機操作指南</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #f8fafc;
+        }
+    </style>
+</head>
+<body class="text-slate-800 antialiased">
+
+    <!-- 頂部標題區 -->
+    <header class="bg-indigo-600 text-white py-12 px-6 shadow-md relative overflow-hidden">
+        <div class="max-w-5xl mx-auto relative z-10">
+            <div class="flex items-center gap-3 mb-4">
+                <i data-lucide="printer" class="w-10 h-10"></i>
+                <h1 class="text-3xl md:text-4xl font-bold tracking-tight">命題中心影印機操作指南</h1>
+            </div>
+            <p class="text-indigo-100 text-lg md:text-xl max-w-2xl">
+                專為校內教師設計的快速操作手冊。請依照您的使用需求，選擇正確的帳號與操作方式。
+            </p>
+        </div>
+        <!-- 背景裝飾 -->
+        <div class="absolute right-0 top-0 opacity-10 transform translate-x-1/4 -translate-y-1/4 pointer-events-none">
+            <i data-lucide="files" class="w-96 h-96"></i>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-12 space-y-16">
+
+        <!-- Section 0: 準備工作 -->
+        <section>
+            <div class="flex items-center gap-3 mb-6 border-b pb-3 border-slate-200">
+                <div class="bg-amber-100 text-amber-600 p-2 rounded-lg">
+                    <i data-lucide="clipboard-list" class="w-6 h-6"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-800">列印前：決定使用哪種帳號？</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <!-- 左側文字 -->
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 border-l-4 border-l-blue-500">
+                        <h3 class="text-xl font-bold text-blue-700 mb-2">A. 處理私人/個人教材</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            請使用 <strong class="text-slate-800">「老師個人帳號」</strong>。<br>
+                            不需要拿卡片，只需在列印或影印時，輸入您個人的密碼即可扣除個人配額。
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 border-l-4 border-l-emerald-500">
+                        <h3 class="text-xl font-bold text-emerald-700 mb-2">B. 處理公務或班級試卷</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            請使用 <strong class="text-slate-800">「教務處影印卡」</strong>。<br>
+                            👉 <span class="text-rose-600 font-medium">請先至教學組幹事辦公桌右上方</span>，拿取登記簿與實體影印卡。<br>
+                            👉 務必於登記簿確實填寫：使用時間、列印內容、班級及教師姓名。
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- 右側圖片：登記簿 -->
+                <div class="relative w-full rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-slate-100 min-h-[250px] flex items-center justify-center">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center text-slate-500 p-4 z-0">
+                        <i data-lucide="image-plus" class="w-10 h-10 mb-2 opacity-50"></i>
+                        <p class="text-sm font-medium">請將 Word 中的「登記簿」照片另存為：</p>
+                        <code class="bg-slate-200 text-slate-700 px-3 py-1 rounded mt-2 text-sm font-mono">pic_logbook.jpg</code>
+                    </div>
+                    <img src="pic_logbook.jpg" alt="登記簿照片" class="relative z-10 w-full h-auto object-cover bg-white" onerror="this.style.display='none';">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 1: 電腦列印 -->
+        <section>
+            <div class="flex items-center gap-3 mb-6 border-b pb-3 border-slate-200">
+                <div class="bg-blue-100 text-blue-600 p-2 rounded-lg">
+                    <i data-lucide="monitor-up" class="w-6 h-6"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-800">一、從電腦發送列印</h2>
+            </div>
+            
+            <div class="space-y-12">
+                <!-- Step 1 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="order-2 md:order-1 relative">
+                        <!-- 右側圖片：選擇印表機 -->
+                        <div class="relative w-full rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-slate-100 min-h-[200px] flex items-center justify-center">
+                            <div class="absolute inset-0 flex flex-col items-center justify-center text-slate-500 p-4 z-0">
+                                <i data-lucide="image-plus" class="w-8 h-8 mb-2 opacity-50"></i>
+                                <p class="text-sm font-medium text-center">請將 Word 中的「選擇命題中心影印機」截圖另存為：</p>
+                                <code class="bg-slate-200 text-slate-700 px-3 py-1 rounded mt-2 text-sm font-mono">pic_step1_printer.png</code>
+                            </div>
+                            <img src="pic_step1_printer.png" alt="選擇印表機截圖" class="relative z-10 w-full h-auto object-contain bg-white" onerror="this.style.display='none';">
+                        </div>
+                        <div class="absolute -right-4 -bottom-4 bg-indigo-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-xl shadow-lg shadow-indigo-200 z-20">1</div>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <h3 class="text-xl font-bold mb-3 flex items-center gap-2">
+                            <span class="text-blue-600">步驟 1.</span> 選擇印表機
+                        </h3>
+                        <p class="text-slate-600 text-lg">
+                            在您的電腦檔案點選「列印」後，請務必將印表機名稱切換為 <strong>「命題中心影印機」</strong>。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="order-2 relative">
+                        <!-- 右側圖片：驗證改用戶號碼 -->
+                        <div class="relative w-full rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-slate-100 min-h-[200px] flex items-center justify-center">
+                            <div class="absolute inset-0 flex flex-col items-center justify-center text-slate-500 p-4 z-0">
+                                <i data-lucide="image-plus" class="w-8 h-8 mb-2 opacity-50"></i>
+                                <p class="text-sm font-medium text-center">請將 Word 中的「驗證改為用戶號碼」截圖另存為：</p>
+                                <code class="bg-slate-200 text-slate-700 px-3 py-1 rounded mt-2 text-sm font-mono">pic_step2_auth.png</code>
+                            </div>
+                            <img src="pic_step2_auth.png" alt="驗證設定截圖" class="relative z-10 w-full h-auto object-contain bg-white" onerror="this.style.display='none';">
+                        </div>
+                        <div class="absolute -left-4 -bottom-4 bg-indigo-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-xl shadow-lg shadow-indigo-200 z-20">2</div>
+                    </div>
+                    <div class="order-1">
+                        <h3 class="text-xl font-bold mb-3 flex items-center gap-2">
+                            <span class="text-blue-600">步驟 2.</span> 修改驗證方式並發送
+                        </h3>
+                        <p class="text-slate-600 text-lg mb-4">
+                            在印表機內容設定中，請將「驗證」選項改為 <strong>「用戶號碼」</strong>。
+                        </p>
+                        <ul class="list-disc list-inside text-slate-600 space-y-2">
+                            <li><strong>用個人帳號：</strong>在此直接輸入您的個人密碼，送出即可列印。</li>
+                            <li><strong>用教務處影印卡：</strong>此處留空，直接送出列印，準備過卡。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="order-2 md:order-1 relative">
+                        <!-- 右側圖片：電腦螢幕下方過卡 -->
+                        <div class="relative w-full rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-slate-100 min-h-[250px] flex items-center justify-center">
+                            <div class="absolute inset-0 flex flex-col items-center justify-center text-slate-500 p-4 z-0">
+                                <i data-lucide="image-plus" class="w-8 h-8 mb-2 opacity-50"></i>
+                                <p class="text-sm font-medium text-center">請將 Word 中的「螢幕下方讀卡機過卡」照片另存為：</p>
+                                <code class="bg-slate-200 text-slate-700 px-3 py-1 rounded mt-2 text-sm font-mono">pic_step3_pc_card.jpg</code>
+                            </div>
+                            <img src="pic_step3_pc_card.jpg" alt="電腦過卡照片" class="relative z-10 w-full h-auto object-cover bg-white" onerror="this.style.display='none';">
+                        </div>
+                        <div class="absolute -right-4 -bottom-4 bg-indigo-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-xl shadow-lg shadow-indigo-200 z-20">3</div>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <h3 class="text-xl font-bold mb-3 flex items-center gap-2">
+                            <span class="text-blue-600">步驟 3.</span> 靠卡感應 (使用影印卡時)
+                        </h3>
+                        <p class="text-slate-600 text-lg">
+                            如果您是使用「教務處影印卡」，送出列印後，請將影印卡放置於<strong>電腦螢幕下方的讀卡機</strong>上進行過卡驗證，機器才會開始列印。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- Section 3: 登出與歸還 -->
+        <section class="bg-rose-50 border border-rose-200 rounded-2xl p-6 md:p-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <i data-lucide="alert-triangle" class="w-8 h-8 text-rose-500"></i>
+                        <h2 class="text-2xl font-bold text-rose-800">重要：結束請務必登出</h2>
+                    </div>
+                    <p class="text-rose-700 text-lg leading-relaxed mb-6">
+                        作業結束後，<strong class="text-rose-900 bg-rose-200 px-1 rounded">請務必按下影印機螢幕上的 [登出] 按鈕</strong>！<br><br>
+                        以免下一位使用者誤用到您的帳號配額。請將教務處影印卡與登記簿，請務必放回教學組原位。
+                    </p>
+                </div>
+                
+                <!-- 右側圖片：螢幕登出 -->
+                <div class="flex justify-center md:justify-end">
+                    <div class="relative w-full max-w-sm rounded-xl overflow-hidden shadow-md border border-slate-200 bg-slate-100 min-h-[250px] flex items-center justify-center">
+                        <div class="absolute inset-0 flex flex-col items-center justify-center text-slate-500 p-4 z-0">
+                            <i data-lucide="image-plus" class="w-8 h-8 mb-2 opacity-50"></i>
+                            <p class="text-sm font-medium text-center">請將 Word 中的「手指按登出」照片另存為：</p>
+                            <code class="bg-slate-200 text-slate-700 px-3 py-1 rounded mt-2 text-sm font-mono">pic_logout.jpg</code>
+                        </div>
+                        <img src="pic_logout.jpg" alt="螢幕登出按鈕照片" class="relative z-10 w-full h-auto object-cover bg-white" onerror="this.style.display='none';">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: 直接影印 -->
+        <section>
+            <div class="flex items-center gap-3 mb-6 border-b pb-3 border-slate-200">
+                <div class="bg-emerald-100 text-emerald-600 p-2 rounded-lg">
+                    <i data-lucide="copy" class="w-6 h-6"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-800">二、直接機台影印 (非電腦列印)</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200">
+                <div class="space-y-4">
+                    <h3 class="text-xl font-bold text-slate-800">於影印機面板登入</h3>
+                    <p class="text-slate-600 text-lg">
+                        若您帶著原稿要直接進行影印，請直接到影印機前：
+                    </p>
+                    <ul class="space-y-4 mt-4">
+                        <li class="flex gap-4 items-start">
+                            <div class="bg-indigo-100 p-2 rounded-full text-indigo-600 mt-1">
+                                <i data-lucide="keyboard" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <strong class="block text-slate-800">個人列印：</strong>
+                                <span class="text-slate-600">直接在影印機的觸控螢幕上「輸入個人密碼」登入。</span>
+                            </div>
+                        </li>
+                        <li class="flex gap-4 items-start">
+                            <div class="bg-indigo-100 p-2 rounded-full text-indigo-600 mt-1">
+                                <i data-lucide="scan" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <strong class="block text-slate-800">公務列印：</strong>
+                                <span class="text-slate-600">將教務處影印卡放置於「影印機左側的讀卡機」感應登入。</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="text-slate-500 text-sm mt-4">👉 登入系統後，即可放置原稿開始影印。</p>
+					<!--<div>
+                                <strong class="block text-slate-800">最後請記得登出：</strong>
+                                <span class="text-slate-600">請務必按下影印機螢幕上的 [登出] 按鈕。</span>
+                            </div> -->
+							<div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <i data-lucide="alert-triangle" class="w-8 h-8 text-rose-500"></i>
+                        <h2 class="text-2xl font-bold text-rose-800">重要：結束請記得登出</h2>
+                    </div>
+                    <!--
+					<p class="text-rose-700 text-lg leading-relaxed mb-6">
+                        作業結束後，<strong class="text-rose-900 bg-rose-200 px-1 rounded">請務必按下影印機螢幕上的 [登出] 按鈕</strong>！<br><br>
+                        以免下一位使用者誤用到您的帳號配額。請將教務處影印卡與登記簿，請務必放回教學組原位。
+                    </p>
+					-->
+                </div>
+                </div>
+
+                <!-- 右側圖片：機台旁過卡 -->
+                <div class="relative w-full rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-slate-100 min-h-[250px] flex items-center justify-center">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center text-slate-500 p-4 z-0">
+                        <i data-lucide="image-plus" class="w-8 h-8 mb-2 opacity-50"></i>
+                        <p class="text-sm font-medium text-center">請將 Word 中的「影印機左側讀卡機過卡」照片另存為：</p>
+                        <code class="bg-slate-200 text-slate-700 px-3 py-1 rounded mt-2 text-sm font-mono">pic_copier_card.jpg</code>
+                    </div>
+                    <img src="pic_copier_card.jpg" alt="影印機旁過卡照片" class="relative z-10 w-full h-auto object-cover bg-white" onerror="this.style.display='none';">
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <!-- 底部資訊區 -->
+    <footer class="bg-slate-800 text-slate-400 py-8 text-center mt-12">
+        <div class="max-w-5xl mx-auto px-6">
+            <p class="mb-2">如有任何操作問題，請洽詢資訊組或教學組。</p>
+            <p class="text-sm">© 學校資訊組 製作維護</p>
+        </div>
+    </footer>
+
+    <!-- 初始化 Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
